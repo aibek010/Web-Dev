@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #262626;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.insta-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 16px 20px;
+}
+
+.insta-left {
+    max-width: 520px;
+}
+
+.insta-logo-row {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.insta-logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.insta-heading {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 32px;
+}
+
+.insta-heading span {
+    color: #e1306c;
+}
+
+.insta-image {
+    width: 320px;
+    height: 380px;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.insta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.insta-right {
+    width: 100%;
+    max-width: 400px;
+}
+
+.insta-form {
+    background-color: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #dbdbdb;
+    padding: 32px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.insta-form-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.insta-form input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 30px;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    outline: none;
+    background-color: #fafafa;
+}
+
+.insta-form input:focus {
+    border-color: #0095f6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px rgba(0, 149, 246, 0.25);
+}
+
+.insta-btn {
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.insta-btn.primary {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 10px 16px;
+    margin-top: 4px;
+}
+
+.insta-btn.primary:hover {
+    background-color: #007acc;
+}
+
+.insta-forgot {
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.insta-forgot:hover {
+    text-decoration: underline;
+}
+
+.insta-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0;
+    color: #8e8e8e;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.insta-divider::before,
+.insta-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.insta-btn.secondary {
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    color: #0095f6;
+}
+
+.insta-btn.secondary:hover {
+    background-color: #f5f5f5;
+}
+
+.insta-signup-link {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    color: #0095f6;
+    text-align: center;
+    text-decoration: none;
+}
+
+.insta-signup-link:hover {
+    text-decoration: underline;
+}
+
+.insta-meta-logo {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #8e8e8e;
+    text-align: center;
+}
+
+.insta-footer {
+    border-top: 1px solid #efefef;
+    padding: 16px 16px 24px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.insta-footer-inner {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.insta-footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    margin-bottom: 10px;
+}
+
+.insta-footer-links a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.insta-footer-links a:hover {
+    text-decoration: underline;
+}
+
+.insta-footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.insta-footer-lang {
+    cursor: default;
+}
+
+.insta-footer-copy {
+    white-space: nowrap;
+}
+
+@media (max-width: 960px) {
+    .insta-page {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .insta-left {
+        text-align: center;
+    }
+
+    .insta-heading {
+        font-size: 26px;
+    }
+
+    .insta-image {
+        margin: 0 auto;
+    }
+}
+
