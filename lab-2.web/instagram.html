@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="instagram.css">
+</head>
+<body>
+    <main class="insta-page">
+        <section class="insta-left">
+            <div class="insta-logo-row">
+                <img src="img/insta.logo.webp" alt="Instagram" class="insta-logo-img">
+            </div>
+
+            <div class="insta-heading">
+                <p>Посмотрите, какими</p>
+                <p>моментами из жизни</p>
+                <p>поделились ваши <span>близкие</span></p>
+                <p><span>друзья.</span></p>
+            </div>
+
+            <div class="insta-image">
+                <img src="img/фотка.png" alt="Пример экрана Instagram на телефоне">
+            </div>
+        </section>
+
+        <section class="insta-right" aria-label="Форма входа в Instagram">
+            <form class="insta-form">
+                <h1 class="insta-form-title">Войти в Instagram</h1>
+
+                <label class="visually-hidden" for="insta-username">Имя пользователя, номер мобильного телефона или электронный адрес</label>
+                <input
+                    id="insta-username"
+                    type="text"
+                    name="username"
+                    placeholder="Имя пользователя, номер мобильного телефона или электронный адрес"
+                    required
+                >
+
+                <label class="visually-hidden" for="insta-password">Пароль</label>
+                <input
+                    id="insta-password"
+                    type="password"
+                    name="password"
+                    placeholder="Пароль"
+                    required
+                >
+
+                <button type="submit" class="insta-btn primary">Войти</button>
+
+                <a href="#" class="insta-forgot">Забыли пароль?</a>
+
+                <div class="insta-divider">
+                    <span>или</span>
+                </div>
+
+                <button type="button" class="insta-btn secondary">Войти через Facebook</button>
+
+                <a href="#" class="insta-signup-link">Создать новый аккаунт</a>
+
+                <div class="insta-meta-logo" aria-hidden="true">Meta</div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="insta-footer">
+        <div class="insta-footer-inner">
+            <ul class="insta-footer-links">
+                <li><a href="#">Meta</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Конфиденциальность</a></li>
+                <li><a href="#">Условия</a></li>
+                <li><a href="#">Meta AI</a></li>
+            </ul>
+
+            <div class="insta-footer-bottom">
+                <span class="insta-footer-lang">Русский</span>
+                <span class="insta-footer-copy">© 2026 Instagram from Meta</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
