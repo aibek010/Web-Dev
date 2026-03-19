@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,3 +58,64 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header-title">ToDo List</h1>
+  </header>
+
+  <main class="main">
+    <h2 class="main-title">ToDo List</h2>
+
+    <form class="add-form" id="addForm" aria-label="Add new task">
+      <label for="newTask" class="visually-hidden">New Task</label>
+      <input
+        type="text"
+        id="newTask"
+        class="task-input"
+        placeholder="New Task"
+        autocomplete="off"
+        maxlength="200"
+      >
+      <button type="submit" class="btn-add">Add</button>
+    </form>
+
+    <section class="list-section" aria-label="Task list">
+      <ul class="task-list" id="taskList">
+        <li class="task-item task-item-done">
+          <input type="checkbox" class="task-checkbox" checked aria-label="Mark First item as done">
+          <span class="task-text">First item</span>
+          <button type="button" class="btn-delete" aria-label="Delete First item">
+            <span class="delete-icon" aria-hidden="true">&#128465;</span>
+          </button>
+        </li>
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" aria-label="Mark Second item as done">
+          <span class="task-text">Second item</span>
+          <button type="button" class="btn-delete" aria-label="Delete Second item">
+            <span class="delete-icon" aria-hidden="true">&#128465;</span>
+          </button>
+        </li>
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" aria-label="Mark Third item as done">
+          <span class="task-text">Third item</span>
+          <button type="button" class="btn-delete" aria-label="Delete Third item">
+            <span class="delete-icon" aria-hidden="true">&#128465;</span>
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> b759ac797edf622f9a625a67796b3388bcbbe1dd
